@@ -1,3 +1,5 @@
+/* GENERAL */
+
 html,
 body {
     margin: 0;
@@ -10,43 +12,99 @@ body {
 body {
     display: grid;
     grid-template-areas: "header header header" "line line line" "banner banner banner" ". form ." ". main ." "footer footer footer";
-    grid-template-rows: [row1-start]2.5em[row1-end row2-start] 2em [row2-end row3-start] 10em [row3-end row4-start]7em[row4-end row5-start] auto [row5-end row6-start] 10em [row6-end];
+    grid-template-rows: [row1-start]2.5em[row1-end row2-start] 2em [row2-end row3-start] 10em [row3-end row4-start]8em[row4-end row5-start] auto [row5-end row6-start] 10em [row6-end];
     grid-template-columns: 2% 1fr 2%;
 
 }
 
-header {
+/* START HEADER */
 
-    background-color: greenyellow;
+header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: ltr;
+    flex-wrap: nowrap;
+    background-color: #73D700;
     grid-area: header;
 }
 
+header > * {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    margin: auto;
+    margin-left: 2%;
+    height: 2.5em;
+}
+
+header h1 {
+    display: none;
+}
+
+header button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: #73D700;
+
+}
+
+Header button:first-of-type {
+    background-image: url(../img/search.svg);
+}
+
+Header button:nth-of-type(2) {
+    background-image: url(../img/user.svg);
+}
+
+/* END HEADER */
+
+/* START BANNER */
+
 aside {
-    background-color: blue;
+    background-image: url(../img/isolation.jpg);
+    background-size: cover;
     grid-area: banner;
 }
+
+/* END BANNER */
+
+/* START FILTERS */
 
 form {
     background: #f39c12;
     grid-area: form;
 }
 
+
 form > select {
     width: 90%;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    height: 1.5em;
+    background-image: none;
+
+    padding: 0 0 0 .2em;
+    height: 2em;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 1em;
+    cursor: pointer;
 }
+
 
 form > p {
     margin: 0;
     margin-left: 5%;
     margin-top: 0.5em;
 }
+
+/* END FILTERS */
 
 main {
     background-color: red;
