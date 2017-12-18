@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+}
+
+
+body {
+    display: grid;
+    grid-template-areas: "header header header" "line line line" "banner banner banner" ". form ." ". main ." "footer footer footer";
+    grid-template-rows: [row1-start]2.5em[row1-end row2-start] 2em [row2-end row3-start] 10em [row3-end row4-start]7em[row4-end row5-start] auto [row5-end row6-start] 10em [row6-end];
+    grid-template-columns: 2% 1fr 2%;
+
+}
+
+header {
+
+    background-color: greenyellow;
+    grid-area: header;
+}
+
+aside {
+    background-color: blue;
+    grid-area: banner;
+}
+
+form {
+    background: #f39c12;
+    grid-area: form;
+}
+
+form > select {
+    width: 90%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1em;
+}
+
+form > p {
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 0.5em;
+}
+
+main {
+    background-color: red;
+    grid-area: main;
+}
+
+body > p {
+    grid-area: line;
+    margin: auto auto;
+
+    background-color: grey;
+
+}
