@@ -20,6 +20,10 @@ body {
 
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* START HEADER */
 
 body > header {
@@ -56,6 +60,8 @@ body > header > button {
 
 body > Header button:first-of-type {
     background-image: url(../img/search.svg);
+    margin: 0 auto;
+    background-position: center;
 }
 
 /* END HEADER */
@@ -126,7 +132,7 @@ aside:nth-of-type(2) button {
     font-size: 1em;
     font-weight: 700;
     color: white;
-    margin: 0 2%;
+    margin: 0 2% 0.5em;
 }
 
 /* END MESSAGE */
@@ -214,6 +220,7 @@ article footer {
     border-top: solid;
     border-color: #C8C8C8;
     overflow: hidden;
+    justify-content: flex-end;
 }
 
 article footer button {
@@ -227,10 +234,33 @@ article footer button:first-of-type {
     margin: 0 0 0.1em 0.1em;
     width: 11.5%;
     background-image: url(../img/heart-shape-silhouette.svg);
+
+}
+
+article footer button:nth-of-type(2) {
+    margin: 0 0 0.1em 0.1em;
+    width: 11.5%;
+    background-image: url(../img/add-list.svg);
+
+}
+
+article footer button:nth-of-type(3) {
+    margin: 0 0 0.1em 0.1em;
+    width: 11.5%;
+    background-image: url(../img/share.svg);
+
 }
 
 article footer p {
     margin: 3% 0 3% 0.1em;
-    transform: translateY(0.5em);
+    transform: translate(-0.4em, 0.5em);
 
+}
+
+body > footer {
+    background-image: url(../img/footer.jpg);
+    grid-area: footer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
