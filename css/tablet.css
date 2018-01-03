@@ -1,0 +1,111 @@
+@media (min-width: 811px) {
+    body {}
+
+    body {
+        display: grid;
+        grid-template-areas: "header header header" "line line line" "banner banner banner" "message message message" ". form ." ". main ." "footer footer footer";
+        grid-template-rows: [row1-start]2.5em[row1-end row2-start] 2em [row2-end row3-start] 15em [row3-end row4-start] auto[row4-end row5-start] auto [row5-end row6-start] auto [row6-end row7-start] 10em [row7-end];
+        grid-template-columns: 2% 1fr 2%;
+
+    }
+
+    /* START BANNER */
+    aside > div {
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        height: 3em;
+        margin: 6em 3em;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+    }
+    aside:first-of-type p {
+        display: inline-block;
+        text-indent: 0.3em;
+        color: #444444;
+    }
+
+    aside:first-of-type button {
+        display: inline-block;
+        height: 2em;
+        background-color: #FFAD00;
+        border-radius: 5px;
+        font-size: 0.9em;
+        color: white;
+    }
+
+    aside:nth-of-type(2) {
+        display: none;
+    }
+
+    /* END BANNER */
+    /* START FORM */
+    form {
+        display: flex;
+        overflow: hidden;
+    }
+
+
+    form > select {
+        min-width: 49%;
+        margin-top: 2em;
+        margin-left: 0;
+    }
+    form > select:first-of-type {
+        margin-left: 0;
+    }
+    form > select:nth-of-type(2) {
+        order: 4;
+
+    }
+
+    form > p {
+        min-width: 5em;
+    }
+
+    /* END FORM */
+    /* START MAIN */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+        overflow: hidden;
+
+    }
+    article:nth-of-type(even) {
+        margin-left: 1.49%;
+    }
+
+    article > header {
+        background-image: url(../img/guitar.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 6em;
+    }
+
+    article > footer {
+        align-self: flex-end;
+    }
+
+    article header h3 {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0.2em;
+        border-radius: 5px;
+        color: #444444;
+        display: inline-block;
+        margin-left: -50%;
+        text-align: left;
+    }
+
+    article > p {
+        margin: 1em;
+    }
+
+    /* END MAIN */
+}

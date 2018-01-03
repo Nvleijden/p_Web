@@ -58,10 +58,18 @@ body > header > button {
 
 }
 
-body > Header button:first-of-type {
+body > Header button {
     background-image: url(../img/search.svg);
-    margin: 0 auto;
+    margin-right: 1em;
     background-position: center;
+}
+
+body > header > a {
+    text-decoration: none;
+    align-self: center;
+    margin-right: 2%;
+    color: white;
+    font-weight: 700;
 }
 
 /* END HEADER */
@@ -90,18 +98,16 @@ aside:nth-of-type(1) {
     font-size: 1.5em;
 }
 
-aside:nth-of-type(1) p {
-    margin: 0.5em 0 0 7%;
+aside:first-of-type p {
+    display: none;
+
 }
 
-aside:nth-of-type(1) h3 {
-    margin: 0em 0 0 7%;
+aside:first-of-type button {
+    display: none;
 }
 
-aside:nth-of-type(1) div {
-    text-align: center;
-}
-
+aside > div {}
 
 /* END BANNER */
 
@@ -158,6 +164,7 @@ form > select {
     height: 2em;
     font-size: 1em;
     cursor: pointer;
+    justify-content: flex-start;
 }
 
 form > select:nth-of-type(2) {
@@ -169,6 +176,7 @@ form > p {
     margin-top: 0.5em;
     margin-bottom: 0.1em;
     text-indent: 0.4em;
+    height: 1em;
 }
 
 /* END FILTERS */
@@ -181,7 +189,7 @@ article {
     margin-top: 1em;
     border-style: solid;
     border-width: 1px;
-
+    margin-bottom: 1em;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -220,7 +228,7 @@ article footer {
     border-top: solid;
     border-color: #C8C8C8;
     overflow: hidden;
-    justify-content: flex-end;
+
 }
 
 article footer button {
@@ -231,16 +239,20 @@ article footer button {
 }
 
 article footer button:first-of-type {
+    justify-content: flex-start;
+}
+
+article footer button:first-of-type {
     margin: 0 0 0.1em 0.1em;
     width: 11.5%;
     background-image: url(../img/heart-shape-silhouette.svg);
-
 }
 
 article footer button:nth-of-type(2) {
     margin: 0 0 0.1em 0.1em;
     width: 11.5%;
     background-image: url(../img/add-list.svg);
+    align-self: flex-end;
 
 }
 
@@ -248,6 +260,7 @@ article footer button:nth-of-type(3) {
     margin: 0 0 0.1em 0.1em;
     width: 11.5%;
     background-image: url(../img/share.svg);
+    align-self: flex-end;
 
 }
 
