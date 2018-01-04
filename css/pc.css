@@ -1,0 +1,35 @@
+@media (min-width: 1200px) {
+
+    body {
+        display: grid;
+        grid-template-areas: "header header header" "banner banner banner" "message message message" ". form ." ". main ." "footer footer footer";
+        grid-template-rows: [row1-start]2.5em[row1-end row2-start] [row2-end row3-start] 1em [row3-end row4-start] auto[row4-end row5-start] auto [row5-end row6-start] auto [row6-end row7-start] 10em [row7-end];
+        grid-template-columns: 2% 1fr 2%;
+
+    }
+    aside:first-of-type {
+        background-image: url(../img/isolation.jpg);
+        background-size: cover;
+        background-position: center;
+        grid-area: banner;
+
+    }
+    section {
+        display: none;
+    }
+
+    article {
+        min-width: 20%;
+        width: 24%;
+        max-height: 15em;
+        margin-left: 0;
+        margin: 1em auto;
+    }
+    article:nth-of-type(even) {
+        margin-left: inherit;
+    }
+    footer {
+        min-height: 15em;
+
+    }
+}

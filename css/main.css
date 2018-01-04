@@ -62,6 +62,7 @@ body > Header button {
     background-image: url(../img/search.svg);
     margin-right: 1em;
     background-position: center;
+    /* text-indent: -90000em; */
 }
 
 body > header > a {
@@ -139,6 +140,7 @@ aside:nth-of-type(2) button {
     font-weight: 700;
     color: white;
     margin: 0 2% 0.5em;
+
 }
 
 /* END MESSAGE */
@@ -186,6 +188,8 @@ main {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
     margin-top: 1em;
     border-style: solid;
     border-width: 1px;
@@ -194,7 +198,6 @@ article {
     -moz-border-radius: 5px;
     border-radius: 5px;
     text-align: center;
-
 }
 
 }
@@ -206,29 +209,26 @@ article h3 {
 }
 
 article p {
-    margin: -1em 0.5em 1em 0.5em;
+    margin: 1em 0.5em 1em 0.5em;
     font-size: 0.7em;
     font-weight: 300;
-
 }
 
 article a {
     display: inline-block;
-    margin: 0.5em 0 1em 0;
+    margin: 0 0 1em 0;
     color: #FFAD00;
     text-decoration: none;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin: 0 auto 1em auto;
 }
 
 article footer {
     display: flex;
-    height: auto;
-    width: 100%;
-    margin: 0 0 0 0;
-    border-radius: 0 0 5px 5px;
-    border-top: solid;
-    border-color: #C8C8C8;
-    overflow: hidden;
+    flex-direction: row;
 
+    margin: 0 0.3em 0.3em 0.3em;
 }
 
 article footer button {
@@ -238,9 +238,6 @@ article footer button {
     background-color: white;
 }
 
-article footer button:first-of-type {
-    justify-content: flex-start;
-}
 
 article footer button:first-of-type {
     margin: 0 0 0.1em 0.1em;
@@ -276,4 +273,9 @@ body > footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+}
+
+.fixedheader {
+    position: fixed;
 }

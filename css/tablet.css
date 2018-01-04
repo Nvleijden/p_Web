@@ -1,4 +1,4 @@
-@media (min-width: 811px) {
+@media (min-width: 630px) {
     body {}
 
     body {
@@ -9,30 +9,42 @@
 
     }
 
+    body > header h1 {
+        display: inherit;
+        margin-left: 2em;
+
+    }
     /* START BANNER */
     aside > div {
         height: auto;
         background-color: rgba(255, 255, 255, 0.9);
         height: 3em;
-        margin: 6em 3em;
+        margin: 6em auto;
         border-radius: 10px;
         display: flex;
+        justify-content: flex-start;
         align-items: center;
         font-size: 1em;
+        max-width: 20em;
     }
     aside:first-of-type p {
         display: inline-block;
-        text-indent: 0.3em;
         color: #444444;
+        margin-left: 1em;
     }
 
     aside:first-of-type button {
         display: inline-block;
         height: 2em;
         background-color: #FFAD00;
-        border-radius: 5px;
+        width: 8em;
+        border-radius: 10px;
         font-size: 0.9em;
         color: white;
+        margin: auto;
+        margin-right: 1em;
+        border: none;
+
     }
 
     aside:nth-of-type(2) {
@@ -73,12 +85,15 @@
     article {
         display: flex;
         flex-direction: column;
+        min-width: 10%;
         width: 49%;
         overflow: hidden;
-
     }
+
+
+
     article:nth-of-type(even) {
-        margin-left: 1.49%;
+        margin-left: 1%;
     }
 
     article > header {
@@ -94,18 +109,41 @@
     }
 
     article header h3 {
+        text-align: left;
         background-color: rgba(255, 255, 255, 0.9);
         padding: 0.2em;
         border-radius: 5px;
         color: #444444;
         display: inline-block;
-        margin-left: -50%;
-        text-align: left;
     }
 
     article > p {
         margin: 1em;
     }
 
+    /* START ARTICLE PHOTOS */
+    article:first-of-type > header {
+        /*Photo by Tim Gouw from Pexels */
+        background-image: url(../img/frustrated.jpeg);
+
+    }
+    article:nth-of-type(2) > header {
+        /*Photo by Pedro Figueras from Pexels */
+        background-image: url(../img/zombie.jpeg);
+    }
+    article:nth-of-type(3) > header {
+        /*Photo by Josh Sorenson from Pexels */
+        background-image: url(../img/western.jpeg);
+    }
+
+    /* END ARTICLE PHOTOS */
     /* END MAIN */
 }
+
+/*
+@media (min-width: 830px;) and @media (max-width: 1200px){
+    article:nth-of-type(1n + 3){
+        margin-top: 0;
+    }
+}
+*/
