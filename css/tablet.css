@@ -1,6 +1,4 @@
 @media (min-width: 630px) {
-    body {}
-
     body {
         display: grid;
         grid-template-areas: "header header header" "line line line" "banner banner banner" "message message message" ". form ." ". main ." "footer footer footer";
