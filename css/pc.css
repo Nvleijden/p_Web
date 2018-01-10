@@ -3,7 +3,11 @@
     body {
         display: grid;
         grid-template-areas: "header header header" "banner banner banner" "message message message" ". form ." ". main ." "footer footer footer";
+<<<<<<< HEAD
         grid-template-rows: [row1-start]2.5em[row1-end row2-start] [row2-end row3-start] 1em [row3-end row4-start] auto[row4-end row5-start] auto [row5-end row6-start] auto [row6-end row7-start] 10em [row7-end];
+=======
+        grid-template-rows: [row1-start]2.5em[row1-end row2-start] auto [row2-end row3-start] auto[row3-end row4-start] auto[row4-end row5-start] auto [row5-end row6-start] auto [row6-end row7-start] auto[row7-end];
+>>>>>>> laptop_temp
         grid-template-columns: 2% 1fr 2%;
 
     }
@@ -12,24 +16,32 @@
         background-size: cover;
         background-position: center;
         grid-area: banner;
-        height: 11.35em;
+        height: 10.35em;
     }
     section {
         display: none;
     }
+    form span {
+        width: 48.4%;
+        margin-top: 0;
+        margin-top: 0.3em;
+    }
+    form span:first-of-type {
+        margin-left: 0.5em;
+    }
 
+    form span:nth-of-type(2) {
+        margin-right: 0.5em;
+    }
     article {
         min-width: 20%;
         width: 24%;
         max-height: 15em;
-        margin-left: 0;
         margin: 1em auto;
+        margin-bottom: 0;
     }
-    article:nth-of-type(even) {
-        margin-left: inherit;
-    }
+   
     footer {
         min-height: 15em;
-
     }
 }
