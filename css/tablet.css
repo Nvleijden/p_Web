@@ -6,11 +6,10 @@
         grid-template-columns: 2% 1fr 2%;
 
     }
-    
 
     body > header h1 {
         display: inherit;
-        margin-right: auto;
+        margin-left: 2em;
 
     }
     /* START BANNER */
@@ -54,16 +53,29 @@
     /* START FORM */
     form {
         display: flex;
-        justify-content: space-evenly;
+        flex
     }
     form span {
-        min-width: 48%;
+        display: inline-block;
+        overflow: hidden;
+        width: 49.2%;
     }
-    
-    form span:nth-of-type(n){
-        margin-left: 0.3em;
+
+    form span:first-of-type {
+        margin-right: 0.3em
     }
-    
+
+    form span:nth-of-type(2) {
+        margin-left: auto;
+    }
+    form span > select {
+        width: 100%;
+    }
+
+    form span > p {
+        min-width: 5em;
+    }
+
     /* END FORM */
     /* START MAIN */
     main {
@@ -78,8 +90,10 @@
         overflow: hidden;
     }
 
+
+
     article:nth-of-type(even) {
-        margin-left: 1%;
+        margin-left: auto;
     }
 
     article > header {
@@ -88,6 +102,10 @@
         background-position: center;
         background-size: cover;
         height: 6em;
+    }
+
+    article > footer {
+        align-self: flex-end;
     }
 
     article header h3 {
@@ -102,10 +120,7 @@
     article > p {
         margin: 1em;
     }
-    
-    form select{
-        margin-bottom: 1em;
-    }
+
     /* START ARTICLE PHOTOS */
     article:first-of-type > header {
         /*Photo by Tim Gouw from Pexels */
@@ -120,27 +135,15 @@
         /*Photo by Josh Sorenson from Pexels */
         background-image: url(../img/western.jpeg);
     }
-    article:nth-of-type(5) > header {
-        /*Photo by Josh Sorenson from Pexels */
-        background-image: url(../img/moto%20copy.jpg);
-    } 
-    article:nth-of-type(6) > header {
-        /*Photo by Josh Sorenson from Pexels */
-        background-image: url(../img/old.jpeg);
-    }
-    
-    article:nth-of-type(7) > header {
-        /*Photo by Josh Sorenson from Pexels */
-        background-image: url(../img/tired.jpeg);
-    }
-    
-    article:nth-of-type(8) > header {
-        /*Photo by Josh Sorenson from Pexels */
-        background-image: url(../img/blind.jpg);
-    }
+
     /* END ARTICLE PHOTOS */
     /* END MAIN */
 }
 
-
-
+/*
+@media (min-width: 830px;) and @media (max-width: 1200px){
+    article:nth-of-type(1n + 3){
+        margin-top: 0;
+    }
+}
+*/

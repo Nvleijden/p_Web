@@ -28,6 +28,7 @@ button:hover {
 
 body > header {
     display: flex;
+    justify-content: flex-end;
     flex-direction: ltr;
     flex-wrap: nowrap;
     background-color: #73D700;
@@ -40,7 +41,7 @@ body > header > * {
 }
 
 body > header img {
-    margin: 0.25em 0 1em;
+    margin: 0.25em auto 1em;
     margin-left: 2%;
     height: 2em;
 }
@@ -50,17 +51,18 @@ body > header h1 {
 }
 
 body > header > button {
-    background-image: url(../img/search.svg);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 75%;
+    border: none;
     background-color: #73D700;
-    width: 5.5em;
-    margin-right: 2%;
-    margin-top: 0.05em;
-    margin-bottom: 0.05em;
-    text-indent: 666em;
+
+}
+
+body > Header button {
+    background-image: url(../img/search.svg);
+    margin-right: 1em;
+    background-position: center;
+    /* text-indent: -90000em; */
 }
 
 body > header > a {
@@ -150,11 +152,10 @@ form {
     border-bottom: solid;
     border-color: #C8C8C8;
     border-width: 1px;
-    
 }
 
 
-form  select {
+form span > select {
     margin-top: 0.1em;
     margin-bottom: 0.5em;
     width: 100%;
@@ -163,6 +164,7 @@ form  select {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    padding: 0 0 0 0.2em;
     height: 2em;
     font-size: 1em;
     cursor: pointer;
@@ -170,11 +172,11 @@ form  select {
     text-indent: 1em;
 }
 
-form  select:nth-of-type(2) {
+form span > select:nth-of-type(2) {
     margin-bottom: 0.4em;
 }
 
-form  label {
+form span > label {
     margin: 1em;
     text-indent: 0.4em;
     height: 1em;
@@ -227,11 +229,6 @@ article a {
     align-self: flex-end;
     margin: 0 auto 1em auto;
 }
-article a::after {
-    content:">";
-    color:black
-    
-}
 
 article footer {
     display: flex;
@@ -245,26 +242,29 @@ article footer button {
     background-size: cover;
     border: none;
     background-color: white;
-    width:5em;
-    height:5em;
-    text-indent:-666em;
-    margin: 0 0 0.1em 0.1em;
-    background-size: 60%;
 }
 
 
 article footer button:first-of-type {
+    margin: 0 0 0.1em 0.1em;
+    width: 11.5%;
     background-image: url(../img/heart-shape-silhouette.svg);
 }
 
 article footer button:nth-of-type(2) {
+    margin: 0 0 0.1em 0.1em;
+    width: 11.5%;
     background-image: url(../img/add-list.svg);
-    margin-left: auto;
+    align-self: flex-end;
 
 }
 
 article footer button:nth-of-type(3) {
+    margin: 0 0 0.1em 0.1em;
+    width: 11.5%;
     background-image: url(../img/share.svg);
+    align-self: flex-end;
+
 }
 
 article footer p {
