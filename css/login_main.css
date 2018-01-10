@@ -41,7 +41,7 @@ body > header > * {
 }
 
 body > header img {
-    margin: 0.25em auto 0.25em;
+    margin: 0.25em auto 1em;
     margin-left: 2%;
     height: 2em;
 }
@@ -51,22 +51,18 @@ body > header h1 {
 }
 
 body > header > button {
-    background-image: url(../img/search.svg);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 75%;
+    border: none;
     background-color: #73D700;
-    width: 5.5em;
-    margin-right: 2%;
-    margin-top: 0.05em;
-    margin-bottom: 0.05em;
-    text-indent: 666em;
+
 }
 
 body > Header button {
-    
-    
+    background-image: url(../img/search.svg);
+    margin-right: 1em;
+    background-position: center;
+    /* text-indent: -90000em; */
 }
 
 body > header > a {

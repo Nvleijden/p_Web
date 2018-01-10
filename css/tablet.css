@@ -6,11 +6,10 @@
         grid-template-columns: 2% 1fr 2%;
 
     }
-    
 
     body > header h1 {
         display: inherit;
-        margin-right: auto;
+        margin-left: 2em;
 
     }
     /* START BANNER */
@@ -64,6 +63,9 @@
         margin-left: 0.3em;
     }
     
+    form span:first-of-type select{
+        width: 
+    }
     /* END FORM */
     /* START MAIN */
     main {
@@ -78,6 +80,8 @@
         overflow: hidden;
     }
 
+
+
     article:nth-of-type(even) {
         margin-left: 1%;
     }
@@ -88,6 +92,9 @@
         background-position: center;
         background-size: cover;
         height: 6em;
+    }
+
+    article > footer {
     }
 
     article header h3 {
@@ -102,10 +109,7 @@
     article > p {
         margin: 1em;
     }
-    
-    form select{
-        margin-bottom: 1em;
-    }
+
     /* START ARTICLE PHOTOS */
     article:first-of-type > header {
         /*Photo by Tim Gouw from Pexels */
@@ -120,24 +124,7 @@
         /*Photo by Josh Sorenson from Pexels */
         background-image: url(../img/western.jpeg);
     }
-    article:nth-of-type(5) > header {
-        /*Photo by Josh Sorenson from Pexels */
-        background-image: url(../img/moto%20copy.jpg);
-    } 
-    article:nth-of-type(6) > header {
-        /*Photo by Josh Sorenson from Pexels */
-        background-image: url(../img/old.jpeg);
-    }
     
-    article:nth-of-type(7) > header {
-        /*Photo by Josh Sorenson from Pexels */
-        background-image: url(../img/tired.jpeg);
-    }
-    
-    article:nth-of-type(8) > header {
-        /*Photo by Josh Sorenson from Pexels */
-        background-image: url(../img/blind.jpg);
-    }
     /* END ARTICLE PHOTOS */
     /* END MAIN */
 }

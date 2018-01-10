@@ -51,10 +51,12 @@
         display: none;
     }
 
+    span > input {
+        min-width: 20%;
+    }
     body > form:nth-of-type(2) > h2 {
         margin-left: 0;
         margin-top: 0.4em;
-        margin-bottom: 3.83em;
     }
     a {
         text-decoration: none;
@@ -69,13 +71,8 @@
         color: #FFAD00;
     }
     span > input {
-        margin-left: 2%;
-        margin-right: 2%;
-        min-width: 20%;
-        max-width: 97.8%;
-    }
-    form:nth-of-type(2) button{
-        margin-top: 0.1em;
+        margin: inherit 0;
+
     }
 }
 
