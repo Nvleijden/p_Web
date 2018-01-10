@@ -28,7 +28,6 @@ button:hover {
 
 body > header {
     display: flex;
-    justify-content: flex-end;
     flex-direction: ltr;
     flex-wrap: nowrap;
     background-color: #73D700;
@@ -41,7 +40,7 @@ body > header > * {
 }
 
 body > header img {
-    margin: 0.25em auto 1em;
+    margin: 0.25em 0 1em;
     margin-left: 2%;
     height: 2em;
 }
@@ -51,18 +50,17 @@ body > header h1 {
 }
 
 body > header > button {
+    background-image: url(../img/search.svg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: none;
+    background-size: 75%;
     background-color: #73D700;
-
-}
-
-body > Header button {
-    background-image: url(../img/search.svg);
-    margin-right: 1em;
-    background-position: center;
-    /* text-indent: -90000em; */
+    width: 5.5em;
+    margin-right: 2%;
+    margin-top: 0.05em;
+    margin-bottom: 0.05em;
+    text-indent: 666em;
 }
 
 body > header > a {
@@ -250,23 +248,22 @@ article footer button {
     width:5em;
     height:5em;
     text-indent:-666em;
+    margin: 0 0 0.1em 0.1em;
+    background-size: 60%;
 }
 
 
 article footer button:first-of-type {
-    margin: 0 0 0.1em 0.1em;
     background-image: url(../img/heart-shape-silhouette.svg);
 }
 
 article footer button:nth-of-type(2) {
-    margin: 0 0 0.1em 0.1em;
     background-image: url(../img/add-list.svg);
     margin-left: auto;
 
 }
 
 article footer button:nth-of-type(3) {
-    margin: 0 0 0.1em 0.1em;
     background-image: url(../img/share.svg);
 }
 
