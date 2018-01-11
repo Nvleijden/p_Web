@@ -23,7 +23,7 @@
     }
     form span:first-of-type {
         margin-left: 0.2em;
-        
+
     }
 
     form span:nth-of-type(2) {
@@ -36,8 +36,10 @@
         margin: 1em auto;
         margin-bottom: 0;
     }
-   
-    footer {
+    article footer {
+        margin-bottom: 0.3em;
+    }
+    body > footer {
         min-height: 15em;
     }
 }

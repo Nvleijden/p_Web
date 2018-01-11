@@ -16,8 +16,8 @@
         margin-top: 0em;
         margin-left: 0.3em;
     }
-    
-    
+
+
     /* START BANNER */
     aside > div {
         background-color: rgba(255, 255, 255, 0.9);
@@ -49,8 +49,8 @@
         border: none;
 
     }
-    
-    aside:first-of-type button:hover{
+
+    aside:first-of-type button:hover {
         background-color: #ff9400;
     }
 
@@ -112,9 +112,10 @@
         background-size: cover;
         height: 6em;
     }
-    
+
     article > footer {
         min-height: 2.5em;
+        margin-bottom: 0;
     }
 
     article header h3 {
@@ -130,10 +131,26 @@
         margin: 1em;
     }
     article footer p {
-    margin: 3% 0 3% 0.1em;
-    transform: translate(-0.8em, 1.4em);
+        transform: translate(-1em, 1.5em);
+        font-size: 0.8em;
 
-}
+    }
+    article footer button:nth-of-type(2) {
+        background-image: url(../img/add-list.svg);
+        margin-left: auto;
+        background-size: 70%;
+        width: 3em;
+        height: 3em;
+        margin: 1em 0 0 auto;
+    }
+
+    article footer button:nth-of-type(3) {
+        background-image: url(../img/share.svg);
+        background-size: 70%;
+        width: 3em;
+        height: 3em;
+        margin-top: 1em;
+    }
 
     /* START ARTICLE PHOTOS */
     article:first-of-type > header {
