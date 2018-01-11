@@ -11,9 +11,7 @@
     body > header h1 {
         display: inherit;
         margin-right: auto;
-        font-weight: 700;
-        color: white;
-        margin-top: 0em;
+        margin-top: 0;
         margin-left: 0.3em;
     }
     
@@ -48,10 +46,6 @@
         margin-right: 1em;
         border: none;
 
-    }
-    
-    aside:first-of-type button:hover{
-        background-color: #ff9400;
     }
 
     aside:nth-of-type(2) {
@@ -112,10 +106,6 @@
         background-size: cover;
         height: 6em;
     }
-    
-    article > footer {
-        min-height: 2.5em;
-    }
 
     article header h3 {
         text-align: left;
@@ -129,11 +119,7 @@
     article > p {
         margin: 1em;
     }
-    article footer p {
-    margin: 3% 0 3% 0.1em;
-    transform: translate(-0.8em, 1.4em);
 
-}
 
     /* START ARTICLE PHOTOS */
     article:first-of-type > header {

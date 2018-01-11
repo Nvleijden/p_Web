@@ -1,4 +1,4 @@
-@media (min-width: 630px) {
+@media (min-width: 640px) {
     html {
         background-image: url(../img/family.jpg);
         background-repeat: no-repeat;
@@ -7,7 +7,7 @@
     }
     body {
         display: flex;
-        flex-dir ection: row;
+        flex-direction: row;
         flex-wrap: wrap;
         background-position: center;
         justify-content: center;
@@ -19,13 +19,8 @@
         
     }
     
-    header button{
-        border: 0;
-    }
-    
     form {
-        min-width: 42%;
-        width: 44%;
+        min-width: 44%;
         background-color: rgba(255,255,255, 0.95);
         border-radius: 1em;
     }
@@ -41,6 +36,7 @@
     }
     form:nth-of-type(2) {
         padding-left: 0.2em;
+        display: inline-block;
         border-width: 0 0 0 2px;
         border-style: solid;
         margin-top: 1em;
@@ -49,9 +45,6 @@
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
 
-    }
-    form:first-of-type button:nth-of-type(3):hover, form:nth-of-type(2) button:hover {
-        background-color: #6cc605;
     }
     
     h3 {
@@ -75,7 +68,6 @@
         margin: 0.5em auto 1em auto;
         color: #FFAD00;
     }
-    
     span > input {
         margin-left: 2%;
         margin-right: 2%;
@@ -83,11 +75,7 @@
         max-width: 97.8%;
     }
     form:nth-of-type(2) button{
-        margin-top: auto;
-    }
-    
-    form:first-of-type button:nth-of-type(3){
-        margin-top: auto;
+        margin-top: 0.1em;
     }
 }
 
