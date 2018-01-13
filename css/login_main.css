@@ -13,6 +13,10 @@ body {
     border-color: #C8C8C8;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     display: grid;
     grid-template-areas: "header header header" ". form ." ". form2 ." "footer footer footer";
@@ -62,12 +66,10 @@ body > header > button {
     margin-top: 0.05em;
     margin-bottom: 0.05em;
     text-indent: 666em;
+    border: none;
 }
 
-body > Header button {
-    
-    
-}
+body > Header button {}
 
 body > header > a {
     text-decoration: none;
@@ -142,13 +144,13 @@ form > button {
     margin: 0 0 0.5em;
 }
 
+
+
 form:nth-of-type(2) button {
     margin-bottom: 1.28em
-
 }
 
 /* Facebook button */
-
 
 form:first-of-type > button:first-of-type {
     background-image: linear-gradient(#4C69BA, #3B55A0);
@@ -221,24 +223,69 @@ p {
     max-width: 9em;
 }
 
-form:first-of-type p:first-of-type{
-    max-width: 13em;
+.warningText {
+    display: none;
+}
+
+.warnBorder {
+    border-color: red;
+}
+
+.warning {
     color: red;
-    margin-bottom: 0.5em;
+    display: block;
+    max-width: 13em;
+    transition: all 0.3s;
+}
+
+.warningshake {
+    /* voorbeeld vanhttps://css-tricks.com/snippets/css/shake-css-keyframe-animation/ */
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+}
+
+@keyframes shake {
+    10%,
+    90% {
+
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    70% {
+
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(-4px, 0, 0);
+        background-color: red;
+    }
+
+    40%,
+    60% {
+
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 form:first-of-type a:after {
     content: " >";
-    color: black
+    color: black;
 }
 
-form:first-of-type input:nth-of-type(1):focus{
-    
-}
-@media (max-width: 300px){
-    form:first-of-type >button:first-of-type,
-    form:first-of-type >button:nth-child(3) {
+
+.dance @media (max-width: 300px) {
+    form:first-of-type > button:first-of-type,
+    form:first-of-type > button:nth-child(3) {
         font-size: 0.6em;
     }
-   
-    

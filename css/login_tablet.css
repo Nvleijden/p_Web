@@ -11,22 +11,26 @@
         flex-wrap: wrap;
         background-position: center;
         justify-content: center;
-        
+
     }
 
     header {
         flex: 0 1 100%;
-        
+
     }
-    
-    header button{
+
+    header h1 {
+        display: inherit;
+    }
+
+    header button {
         border: 0;
     }
-    
+
     form {
         min-width: 42%;
         width: 44%;
-        background-color: rgba(255,255,255, 0.95);
+        background-color: rgba(255, 255, 255, 0.95);
         border-radius: 1em;
     }
 
@@ -50,16 +54,17 @@
         border-top-left-radius: 0;
 
     }
-    form:first-of-type button:nth-of-type(3):hover, form:nth-of-type(2) button:hover {
+    form:first-of-type button:nth-of-type(3):hover,
+    form:nth-of-type(2) button:hover {
         background-color: #6cc605;
     }
-    
+
     h3 {
         display: none;
     }
 
     body > form:nth-of-type(2) > h2 {
-        margin-left: 0;
+
         margin-top: 0.4em;
         margin-bottom: 3.83em;
     }
@@ -75,32 +80,27 @@
         margin: 0.5em auto 1em auto;
         color: #FFAD00;
     }
-    
+
     span > input {
         margin-left: 2%;
         margin-right: 2%;
         min-width: 20%;
-        max-width: 97.8%;
+        max-width: 96.8%;
     }
-    form:nth-of-type(2) button{
+    form:nth-of-type(2) button {
         margin-top: auto;
     }
-    
-    form:first-of-type button:nth-of-type(3){
+
+    form:first-of-type button:nth-of-type(3) {
         margin-top: auto;
     }
 }
 
-@media (min-width: 650px) {
-    form:nth-of-type(2) {
-        padding-left: 0.3em;
-
-    }
-    form:first-of-type {
-        padding-right: 0.3em;
-
-    }
+input:hover {
+    cursor: text;
 }
+
+
 
 @media (min-width: 680px) {
     form:nth-of-type(2) {
@@ -113,9 +113,10 @@
     }
 }
 
-@media (min-width: 1000px){
-    form{
-        min-width: 15em;
+@media (min-width: 950px) {
+    form {
+        min-width: 13em;
+        width: 18em;
     }
 }
 

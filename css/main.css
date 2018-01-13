@@ -293,35 +293,67 @@ body > footer {
 
 }
 
-#container {
+.container {
     bottom: 0;
     right: 0;
     position: fixed;
     margin-right: 10%;
-    margin-bottom: 10%;
-    width: 3em;
-    height: 3em;
+    margin-bottom: 5%;
+    width: 2em;
+    height: 2em;
     background-image: url(../img/upload.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
     padding: 0.5em;
     background-color: #73D700;
-    -webkit-box-shadow: -2px 3px 69px 1px rgba(0, 0, 0, 0.51);
-    -moz-box-shadow: -2px 3px 69px 1px rgba(0, 0, 0, 0.51);
-    box-shadow: -2px 3px 69px 1px rgba(0, 0, 0, 0.51);
-    border-radius: 1.5em;
+
+    -webkit-box-shadow: -2px 9px 78px 1px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: -2px 9px 78px 1px rgba(0, 0, 0, 0.49);
+    box-shadow: -2px 9px 78px 1px rgba(0, 0, 0, 0.49);
+    border-radius: 1em;
     transition: all 0.2s;
 
 }
 
+.container.show {
+    animation: grow 0.5s;
+    display: inherit;
+    opacity: 1;
+}
 
-#container:hover {
+.container.hide {
+    animation: shrink 0.5s;
+
+}
+
+.container.disp {
+    display: none;
+}
+
+.container:hover {
     background-image: url(../img/toTop.svg);
     background-color: #95f900;
-    margin-bottom: 11%;
-    em;
-    -webkit-box-shadow: -2px 9px 78px 1px rgba(0, 0, 0, 0.49);
-    -moz-box-shadow: -2px 9px 78px 1px rgba(0, 0, 0, 0.49);
-    box-shadow: -2px 9px 78px 1px rgba(0, 0, 0, 0.49);
+    margin-bottom: 6%;
+    -webkit-box-shadow: -2px 3px 69px 1px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: -2px 3px 69px 1px rgba(0, 0, 0, 0.55);
+    box-shadow: -2px 3px 69px 1px rgba(0, 0, 0, 0.55);
+}
+
+
+@keyframes grow {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: inherit;
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        display: inherit;
+        transform: scale(1);
+    }
 }
