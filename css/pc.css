@@ -42,4 +42,7 @@
     body > footer {
         min-height: 15em;
     }
+    body > p {
+        margin-bottom: 12%;
+    }
 }
