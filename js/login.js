@@ -19,6 +19,9 @@ document.querySelector(".warningButton").onclick = function () {
     inp1.classList.add("warnBorder");
     inp2.classList.add("warnBorder");
     btn.classList.add("warningshake");
-    sleep(500);
+    setTimeout(function () {
+        btn.classList.remove("warningshake");
+    }, 3000);
     return false;
+
 };
