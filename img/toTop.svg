@@ -5,9 +5,10 @@
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 	.st1{fill:none;}
-	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st3{font-family:'RobotoCondensed-Bold';}
-	.st4{font-size:100px;}
+	.st2{font-family:'RobotoCondensed-Bold';}
+	.st3{font-size:145.28px;}
+	.st4{letter-spacing:-6;}
+	.st5{stroke:#FFFFFF;stroke-miterlimit:10;}
 </style>
 <g>
 	<path id="Expand_Less" class="st0" d="M274.3,12.9c-9.9-9.9-26.6-9.9-36.5,0L7.6,242.5c-10.1,10.1-10.1,26.4,0,36.5
@@ -15,7 +16,6 @@
 </g>
 <rect x="27" y="334.3" class="st1" width="443" height="106"/>
 <rect x="-1" y="386.3" class="st1" width="512" height="127"/>
-<text transform="matrix(1 0 0 1 112.7148 461.276)" class="st2 st3 st4">BOVEN</text>
-<rect x="-1" y="280.3" class="st1" width="512" height="127"/>
-<text transform="matrix(1 0 0 1 136.9824 355.276)" class="st2 st3 st4">NAAR</text>
+<text transform="matrix(1 0 0 1 -1.0747 441.735)" class="st0 st2 st3 st4">OMHOOG</text>
+<rect x="-84" y="-382.7" class="st5" width="378" height="100"/>
 </svg>

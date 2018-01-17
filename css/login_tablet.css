@@ -7,7 +7,7 @@
     }
     body {
         display: flex;
-        flex-dir ection: row;
+        flex-direction: row;
         flex-wrap: wrap;
         background-position: center;
         justify-content: center;
@@ -118,7 +118,4 @@ input:hover {
         min-width: 13em;
         width: 18em;
     }
-}
-
-
 }
